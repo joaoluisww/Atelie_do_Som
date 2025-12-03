@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    ---marrom: #413019;
+    ---marromClaro:#6A553A;
+    ---begi:#95826a;
+    ---cinza:#bfb5a8;
+    ---creme:#ead1b0;
+}
+
+body{
+    background-color: var(---fundo-site);
+}
+
+/* HEADER */
+header{
+    width:100;
+}
+header>div.container-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #6A553A;
+    
+}
+
+.container-flex{
+    width:85%;
+    max-width: 1440px;
+}
