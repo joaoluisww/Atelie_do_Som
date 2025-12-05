@@ -1,34 +1,92 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     ---marrom: #413019;
-    ---marromClaro:#6A553A;
-    ---begi:#95826a;
-    ---cinza:#bfb5a8;
-    ---creme:#ead1b0;
+    ---marromClaro: #6A553A;
+    ---begi: #95826a;
+    ---cinza: #bfb5a8;
+    ---creme: #ead1b0;
 }
 
-body{
-    background-color: var(---fundo-site);
+
+@font-face {
+    font-family:Recursive;
+    src: url(./static/Recursive-SemiBold.ttf);
+}
+
+
+body {
+    background-color: var(--fundo-site);
 }
 
 /* HEADER */
-header{
-    width:100;
+header {
+    width: 100;
 }
-header>div.container-flex{
+
+header>div.container-flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #6A553A;
-    
+    height: 165px;
 }
 
-.container-flex{
-    width:85%;
+.container-flex {
+    width: 85%;
     max-width: 1440px;
+    margin-top: auto;
+}
+
+#logo {
+    width: 155px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.links a {
+    font-size: 25px;
+    color: var(---creme);
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: var(---creme);
+    border-bottom: 1px solid var(---cinza);
+}
+
+#icone-barras,
+#icone-x,
+#menu-botao {
+    display: none;
+}
+
+.banner{
+background-image: url(./foto\ 01.jpg);
+height: 120vh;
+background-repeat: no-repeat;
+background-position: 0 -10px;
+
+display: flex;
+flex-direction: column;
+justify-content:space-between; 
+
+}
+
+.sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.foto{
+    width: 50%;
+    height: 200px;
 }
