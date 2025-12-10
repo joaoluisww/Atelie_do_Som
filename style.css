@@ -14,7 +14,7 @@
 
 
 @font-face {
-    font-family:Recursive;
+    font-family: Recursive;
     src: url(./static/Recursive-SemiBold.ttf);
 }
 
@@ -32,17 +32,17 @@ header>div.container-flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 165px;
 }
 
+
 .container-flex {
-    width: 85%;
-    max-width: 1440px;
+    width: 100%;
     margin-top: auto;
 }
 
-#logo {
+.logo {
     width: 155px;
+
 }
 
 .links {
@@ -62,31 +62,18 @@ header>div.container-flex {
     border-bottom: 1px solid var(---cinza);
 }
 
+
 #icone-barras,
 #icone-x,
 #menu-botao {
     display: none;
 }
 
-.banner{
-background-image: url(./foto\ 01.jpg);
-height: 120vh;
-background-repeat: no-repeat;
-background-position: 0 -10px;
 
-display: flex;
-flex-direction: column;
-justify-content:space-between; 
+.fundo {
+    height: 120vh;
+    background-repeat: no-repeat;
+    background-position: 0 -10px;
 
-}
-
-.sobre{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.foto{
-    width: 50%;
-    height: 200px;
+    justify-content: center;
 }
