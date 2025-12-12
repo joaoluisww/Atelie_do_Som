@@ -14,7 +14,6 @@
     -----branco: #ffffff;
 }
 
-
 @font-face {
     font-family: "recursive-regular";
     src: url(Recursive/static/Recursive-Regular.ttf);
@@ -56,7 +55,8 @@ header>div.container-flex {
 }
 
 .container-flex {
-    font-size: 49px;
+    font-size: 42px;
+   
 }
 
 /*---------------------//---------------------*/
@@ -71,7 +71,8 @@ header>div.container-flex {
 
 .links {
     display: flex;
-    align-items: center;
+    justify-content: right;
+
     gap: 20px;
 }
 
@@ -270,4 +271,40 @@ footer svg {
 
 .img{
     height: auto;
+}
+
+/* -------------------- Responsividade --------------- */
+
+@media screen and (max-width: 768px) {
+#sombra {
+        background-color: #9D562390;
+        backdrop-filter: blur(10px);
+        z-index: 1;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        right: -101vw;
+        transition: .5s;
+    }
+
+    #menu_botao {
+        display: block;
+        z-index: 1;
+    }
+
+nav.menu {
+        /* height: 100vh; */
+        width: 200px;
+        padding: 0px 30px;
+
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 15px;
+
+        position: fixed;
+        top: 165px;
+        right: -210px;
+        z-index: 1;
+        transition: .5s;
+    }
 }
