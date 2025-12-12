@@ -10,12 +10,14 @@
     ---begi: #95826a;
     ---cinza: #bfb5a8;
     ---creme: #ead1b0;
+    ----preto: #000000;
+    -----branco: #ffffff;
 }
 
 
 @font-face {
-    font-family: Recursive;
-    src: url(./static/Recursive-SemiBold.ttf);
+    font-family: "recursive-regular";
+    src: url(Recursive/static/Recursive-Regular.ttf);
 }
 
 
@@ -34,20 +36,37 @@ header>div.container-flex {
     justify-content: center;
 }
 
-
+/*-------------------//------------*/
 .container-flex {
     width: 85%;
-    max-width:1440px;
-    margin:0 auto;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
+.conteudo-sobre {
+    margin-top: 300px;
+}
+
+.sobre {
+    font-size: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container-flex {
+    font-size: 49px;
+}
+
+/*---------------------//---------------------*/
 .logo {
-     display: flex;
-  flex-direction: column;
-  width: 650px;
-  padding: 16px;
-  border-radius: 12px;
-  margin:100px;
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    padding: 16px;
+    border-radius: 12px;
+    margin: 100px;
 }
 
 .links {
@@ -63,7 +82,7 @@ header>div.container-flex {
 }
 
 .links a:hover {
-    color: var(---creme);
+    color: var(----preto);
     border-bottom: 1px solid var(---cinza);
 }
 
@@ -87,30 +106,168 @@ header>div.container-flex {
 
 }
 
-.img{
+.imagens {
+    margin-top: 400px;
     display: flex;
-    justify-content:center;
-    margin-left:450px ;
-align-items: center;
+    flex-direction: column;
+}
+
+.img {
+    display: flex;
 
 }
 
-.titulo{
+.img img {
+    width: 50%;
+}
+
+.titulo {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.texto{
-position: absolute;
-  top: 50%;      /* posição vertical */
-  left: 50%;     /* posição horizontal */
-  transform: translate(-50%, -50%);
-  color: white;   /* cor do texto */
-  font-size: 20px;
-  font-weight: bold;
+.texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.conteudo-sobre{
+.conteudo-sobre {
     display: flex;
+    align-items: center;
+}
+
+
+/* .imagens h2{
+    color: var(-----branco);
+    font-family: "recursive-regular";
+     background-color: var(----preto);
+     /* padding: 10px 30px 10px  30px; */
+
+.imagens h2{
+    color: var(-----branco);
+    background-color: var(----preto);
+    width: 250px;
+    height: 100px;
+    padding: 10px 30px 10px  30px;
+    border-radius: 20px;
+    font-family: "recursive-regular";
+
+     display: flex;
+    justify-content: center;
+}
+
+.texto-sobre h2{
+   color: var(-----branco);
+    background-color: var(----preto);
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+    font-family: "recursive-regular";
+
+     margin-left: 550px;
+     margin-top: 0px;
+}
+
+
+/*-----------------------------------PRODUTOS-----------------------------------*/
+.texto-produtos{
+    margin-top: 200px;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto-produtos h3{
+    color: var(-----branco);
+    background-color: var(----preto);
+    padding: 10px 30px 10px  30px;
+    border-radius: 20px;
+    font-family: "recursive-regular";
+}
+
+
+
+
+/*--------------------------------INSTRUMENTOS-----------------------------------*/
+.instrumentos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.instrumentos img {
+    border-radius: 25px;
+    border: 7px solid var(----preto);
+    font-family: "recursive-regular";
+}
+
+/*------------------------------------PARALLAXE-------------------------------------*/
+.parallaxe {
+    margin-top: 150px;
+    height: 250px;
+    background-image: url(./paralax.jpg);
+    background-attachment: fixed;
+    background-size: 30%;
+    margin-bottom: 120px;
+    
+}
+
+
+/*------------------------------------LOCALIZAÃ‡ÃƒO-------------------------------------*/
+
+#local {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+#local img {
+    width: 1200px;
+}
+
+#local h3{
+    color: var(-----branco);
+    background-color: var(----preto);
+    padding: 10px 30px 10px  30px;
+    border-radius: 20px;
+    font-family: "recursive-regular";
+}
+
+/*------------------------------------FOOTER-------------------------------------*/
+
+footer{
+    height: 400px;
+    background-color: var(----preto);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-top: 250px;
+}
+
+footer p , footer h3 {
+    color: var(-----branco);
+}
+
+footer svg {
+    color: var(-----branco);
+}
+
+
+#direita p{
+    display: flex;
+    font-size: 30px;
+}
+
+.img{
+    height: auto;
 }
