@@ -87,12 +87,19 @@ header>div.container-flex {
     border-bottom: 1px solid var(---cinza);
 }
 
+#menu_botao{
+    border: none;
+    background-color: transparent;
+    fill: white;
 
-#icone-barras,
+    position: relative;
+    z-index: 99;
+}
+/* #icone-barras,
 #icone-x,
 #menu-botao {
     display: none;
-}
+} */
 
 
 .fundo {
@@ -273,9 +280,6 @@ footer svg {
     height: auto;
 }
 
-/* -------------------- Responsividade --------------- */
-
-@media screen and (max-width: 768px) {
 #sombra {
         background-color: #9D562390;
         backdrop-filter: blur(10px);
@@ -286,6 +290,10 @@ footer svg {
         right: -101vw;
         transition: .5s;
     }
+/* -------------------- Responsividade --------------- */
+
+@media screen and (max-width: 768px) {
+
 
     #menu_botao {
         display: block;

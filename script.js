@@ -8,7 +8,8 @@ let sombra = document.getElementById("sombra")
 
 function abreFechaMenu() {
     //Se o menu está fechado
-    if (window.getComputedStyle(menu).right == "-210px") {
+    if (iconeBarras.classList.contains('show')) {
+        iconeBarras.classList.remove('show')
         //Abrir menu
         menu.style.right = "0"
         
@@ -20,6 +21,7 @@ function abreFechaMenu() {
         
         sombra.style.right = "0"
     } else {
+        iconeBarras.classList.add('show')
         //Fechar o menu
         menu.style.right = "-210px"
         
@@ -33,13 +35,13 @@ function abreFechaMenu() {
     }
 }
 
-onresize = () => {
-    if (window.getComputedStyle(menu).right == "-210px") {
-        // Mostrar icone X
-        iconeX.style.display = "inline"
-    }
-    else{
-        // Esconder icone barras
-        iconeBarras.style.display = "none"
-    }
-}
+// onresize = () => {
+//     if (window.getComputedStyle(menu).right == "-210px") {
+//         // Mostrar icone X
+//         iconeX.style.display = "inline"
+//     }
+//     else{
+//         // Esconder icone barras
+//         iconeBarras.style.display = "none"
+//     }
+// }
